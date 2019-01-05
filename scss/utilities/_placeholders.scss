@@ -1,0 +1,51 @@
+//===============================================================================================
+//  Placeholders
+//===============================================================================================
+
+/* Center Content */
+
+%center {
+    margin: 0 auto;
+}
+
+/* Border Radius */
+
+%border-radius {
+    border-radius: 5px;
+}
+
+/* Space Before */
+
+%space-before {
+    margin-top: 40px;
+}
+
+/* Space After */
+
+%space-after {
+    margin-bottom: 80px;
+}
+
+/* Button Style */
+
+%btn-style {
+    width: 360px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: $font-weight-bold;
+    font-size: .8em;
+    border: none;
+    @extend %border-radius;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+%nav-btn {
+    width: 360px;
+}
+
+/* Base Font Color */
+

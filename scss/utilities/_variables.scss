@@ -2,24 +2,62 @@
 // Variables
 //===============================================================================================
 
-/*  Color Variables  */
+/*  Color Name Variables  */
 
-$color-primary: #51F4C9;
-$color-btn-default: #74D3EB;
-$color-btn-success: #53CA5F;
-$color-btn-error: #DD6969;
-$color-btn-warning: #F07841;
-$color-btn-info: #965EAF;
-$color-grid__col--3: #E99FE9;
-$color-grid__col--6: #1A8CC0;
-$color-grid__col--7: #DC8889;
-$color-grid__col--8: #DC8E6A;
+$aqua: #51F4C9;
+$cozumel: #74D3EB;
+$lime: #53CA5F;
+$watermelon: #DD6969;
+$sunset: #F07841;
+$lavender: #965EAF;
+$panties: #E99FE9;
+$ocean: #1A8CC0;
+$sour: #DC8889;
+$sunkissed: #DC8E6A;
+$january: #807D7A;
+$icy: #D3E3E6;
+$white: #FFFFFF;
+
+
+/*  Theme Colors  */
+
+$themes: (
+    "default": $cozumel,
+    "success": $lime,
+    "error": $watermelon,
+    "warning": $sunset,
+    "info": $lavender);
+
+
+/*  Grid Map  */
+
+$grid-colors: (
+    '3': $panties,
+    '4': $cozumel,
+    '5': lighten($lime, 15%),
+    '6': darken($ocean, 25%),
+    '7': lighten($watermelon, 10%),
+    '8': lighten($sunset, 10%),
+    '12': $aqua);
 
 /*  Font Stacks */
 
-$font-primary: 'Open Sans', sans-serif;
+$font-stack: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+/*  Font Weights  */
+
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+/*  Base Font Config  */
+
+$base-font-size: 16px;
+$base-line-height: 24px;
 
 /*  Media Breakpoints */
 
 $desktop-break: 1400px;
-
+$grid-break-med: 768;
+$grid-break-lg: 1400;

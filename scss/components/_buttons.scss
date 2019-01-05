@@ -1,0 +1,33 @@
+//===============================================================================================
+//  Button Styles
+//===============================================================================================
+
+.btn--default {
+    @extend %btn-style;
+    background-color: $cozumel;
+}
+
+.btn--success {
+    @extend %btn-style;
+    background-color: $lime;
+}
+
+.btn--error {
+    @extend %btn-style;
+    background-color: $watermelon;
+}
+
+.btn--warning {
+    @extend %btn-style;
+    background-color: $sunset;
+}
+
+.btn--info {
+    @extend %btn-style;
+    background-color: $lavender;
+}
+
+.btn--default:last-child {
+    margin-bottom: 40px;
+}
+

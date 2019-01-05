@@ -1,0 +1,20 @@
+//===============================================================================================
+// Forms
+//===============================================================================================
+
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+    width: 350px;
+    height: 35px;
+    border: none;
+    border-bottom: 4px solid $aqua;
+    margin-bottom: 15px;
+}
+
+.form__input::placeholder {
+    font-size: $base-font-size;
+    text-indent: 10px;
+}

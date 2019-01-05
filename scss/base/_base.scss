@@ -1,3 +1,19 @@
 //===============================================================================================
-//Base Styles
+//  Base Styles
 //===============================================================================================
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: $font-stack;
+    line-height: ($base-line-height/$base-font-size);
+    font-size: $base-font-size;
+    max-width: 360px;
+    @extend %center;
+    @extend %space-before;
+}
+
