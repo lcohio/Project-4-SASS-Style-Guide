@@ -4,3 +4,15 @@
 
 /*  Button Colors  */
 
+/*  Media Queries  */
+
+@mixin mq($break) {
+    @if $break == "med" {
+      @media (min-width: $break-med) {
+        @content;
+      }
+    }
+    @else {
+      @error "'#{$break}' is not a valid argument"
+    }
+  }

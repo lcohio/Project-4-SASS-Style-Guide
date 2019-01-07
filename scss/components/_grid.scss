@@ -2,6 +2,60 @@
 //  Grid Styles
 //===============================================================================================
 
-.grid__col--12 {
-    color: $aqua;
+.grid {
+    &__row {
+        @media (min-width: 1500px) {
+            display: flex;
+        }
+    }
+
+    &__col--12 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $aqua;
+        margin-bottom: 40px;
+        }              
+    }
+
+    &__col--6 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $ocean;
+        }              
+    }
+
+    &__col--4 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $cozumel;
+        }              
+    }
+
+    &__col--3 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $panties;
+        }              
+    }
+
+    &__col--5 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $lime;
+        }              
+    }
+
+    &__col--7 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $watermelon;
+        }              
+    }
+
+    &__col--8 {
+        &.theme__colors {
+        @extend %grid-style;
+        background-color: $sunset;
+        }              
+    }
 }

@@ -6,16 +6,18 @@
     margin-left: 80px;
 }
 
-.img--avatar {
-    display: block;
-    margin: 20px auto 60px auto;
-    @extend %space-after;
-}
-
 .img--frame {
     width: 300px;
     margin-left: 30px;
     border: 1px solid #D3E3E6;
     padding: 10px 10px 10px 10px;
 }
+
+.img--avatar {
+    display: block;
+    margin: 20px auto 60px auto;
+    @extend %space-after;
+}
+
+
 

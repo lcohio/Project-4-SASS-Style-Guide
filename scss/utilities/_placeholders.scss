@@ -31,8 +31,8 @@
 %btn-style {
     width: 360px;
     height: 35px;
-    margin: 10px 0 10px 0;
     text-transform: uppercase;
+    margin: 10px 0 10px 0;
     color: $white;
     font-weight: $font-weight-bold;
     font-size: .8em;
@@ -47,5 +47,13 @@
     width: 360px;
 }
 
-/* Base Font Color */
+/* Grid Theme Colors */
 
+%grid-style {
+    width: 370px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+    color: $white;
+    border: none;
+    @extend %border-radius;
+}

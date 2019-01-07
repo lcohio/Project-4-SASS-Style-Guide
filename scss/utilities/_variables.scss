@@ -22,11 +22,12 @@ $white: #FFFFFF;
 /*  Theme Colors  */
 
 $themes: (
-    "default": $cozumel,
-    "success": $lime,
-    "error": $watermelon,
-    "warning": $sunset,
-    "info": $lavender);
+    default: $cozumel,
+    success: $lime,
+    error: $watermelon,
+    warning: $sunset,
+    info: $lavender
+    );
 
 
 /*  Grid Map  */
@@ -42,11 +43,13 @@ $grid-colors: (
 
 /*  Font Stacks */
 
-$font-stack: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$font-stack: 'Lato', 'Arial', sans-serif;
 
 /*  Font Weights  */
 
-$font-weight-light: 200;
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 

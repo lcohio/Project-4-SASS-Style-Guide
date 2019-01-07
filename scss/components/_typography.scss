@@ -2,45 +2,13 @@
 // Typography
 //===============================================================================================
 
-.grid__col--12 {
-    @extend %space-after;
-    p {
-    color: $january;
+.container {
+    @extend %center;
+    @extend %space-before;
+    font-family: $font-stack;
     line-height: $base-line-height;
-    }
-}
-
-.grid__col--8 {
-    p {
-    color: $january;
-    line-height: $base-line-height;
-    margin-bottom: 20px;
-    }
-}
-
-.blockquote {
-    color: $january;
-    font-size: 1.3em;
-    font-style: italic;
-    border-left: 7px solid $aqua;
-    @extend %border-radius;
-    padding-left: 17px;
-    margin-left: 19px;
-    @extend %space-after;
-}
-
-.headline--primary {
-    color: $aqua;
-    font-weight: $font-weight-bold;
-    line-height: 35px;
-    margin-left: 20px;
-    padding-bottom: 15px;
-}
-
-.headline--secondary {
-    color: $january;
-    font-weight: 200;
-    margin-bottom: 40px;
+    font-size: $base-font-size;
+    max-width: 360px;
 }
 
 .link {
@@ -48,3 +16,31 @@
     font-weight: $font-weight-bold;
     color: $cozumel;
 }
+
+.blockquote {
+    @extend %border-radius;
+    @extend %space-after;
+    color: $january;
+    font-size: 1.3em;
+    font-style: italic;
+    border-left: .3em solid $aqua;
+    padding-left: .7em;
+    margin-left: .7em;
+}
+
+.headline {
+    &--primary {
+    color: $aqua;
+    font-weight: $font-weight-bold;
+    line-height: 35px;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    }
+
+    &--secondary {
+    color: $january;
+    font-weight: $font-weight-light;
+    margin-bottom: 40px;
+    }
+}
+

@@ -2,32 +2,36 @@
 //  Button Styles
 //===============================================================================================
 
-.btn--default {
-    @extend %btn-style;
-    background-color: $cozumel;
-}
+.btn {
+    
+    &--default {
+        @extend %btn-style;
+        background-color: $cozumel;
+            &:last-child {
+                margin-bottom: 3em;
+                    }
+                }
 
-.btn--success {
-    @extend %btn-style;
-    background-color: $lime;
-}
+    &--success {
+        @extend %btn-style;
+        background-color: $lime;
+    }
 
-.btn--error {
-    @extend %btn-style;
-    background-color: $watermelon;
-}
+    &--error {
+        @extend %btn-style;
+        background-color: $watermelon;
+    }
 
-.btn--warning {
-    @extend %btn-style;
-    background-color: $sunset;
-}
+    &--warning {
+        @extend %btn-style;
+        background-color: $sunset;
+    }
 
-.btn--info {
-    @extend %btn-style;
-    background-color: $lavender;
-}
-
-.btn--default:last-child {
-    margin-bottom: 40px;
-}
-
+    &--info {
+        @extend %btn-style;
+        background-color: $lavender;
+            &:last-child {
+            margin-bottom: 3em;
+            }
+        }
+    }
