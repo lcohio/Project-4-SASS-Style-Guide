@@ -4,20 +4,35 @@
 
 .grid {
     &__row {
-        @media (min-width: 1500px) {
+        margin-bottom: 40px;
+        @include media(lg) {
             display: flex;
         }
     }
 
     &__col--12 {
+        
+        @include media(lg) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+      
+            justify-content: space-around;
+        }
+        
         &.theme__colors {
         @extend %grid-style;
         background-color: $aqua;
-        margin-bottom: 40px;
         }              
     }
 
     &__col--6 {
+
+        &:last-child {
+            @include media(lg) {
+                margin-left: 20em;
+            }
+    }
         &.theme__colors {
         @extend %grid-style;
         background-color: $ocean;
@@ -25,13 +40,24 @@
     }
 
     &__col--4 {
+        
+        @include media(lg) {
+            height: 300px;
+            width: 40%;
+            float: right;
+        }
+
         &.theme__colors {
-        @extend %grid-style;
-        background-color: $cozumel;
-        }              
+            @extend %grid-style;
+            background-color: $cozumel;
+        }
     }
 
     &__col--3 {
+
+        & img {
+            width: 9em;
+        }
         &.theme__colors {
         @extend %grid-style;
         background-color: $panties;
@@ -42,6 +68,9 @@
         &.theme__colors {
         @extend %grid-style;
         background-color: $lime;
+        @include media(lg) {
+            width: 100%;
+        }
         }              
     }
 
@@ -53,6 +82,11 @@
     }
 
     &__col--8 {
+
+        @include media(lg) {
+            width: 50%;
+        }
+
         &.theme__colors {
         @extend %grid-style;
         background-color: $sunset;

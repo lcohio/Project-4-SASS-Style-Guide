@@ -17,4 +17,9 @@ p {
 ul {
     margin-top: 3em;
     margin-bottom: 7em;
+
+  
+    @include media(lg) {
+        margin-bottom: 0;
+    }
 }

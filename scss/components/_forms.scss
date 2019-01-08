@@ -3,6 +3,17 @@
 //===============================================================================================
 
 .form {
+    @include media(lg) {
+        padding-left: 7em;
+    
+    }
+
+    & img {
+        @include media(lg) {
+            
+        }
+    }
+
     &__input {
     width: 350px;
     height: 35px;

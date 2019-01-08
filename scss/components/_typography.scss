@@ -9,7 +9,12 @@
     line-height: $base-line-height;
     font-size: $base-font-size;
     max-width: 360px;
+    
+    @include media(lg) {
+        min-width: 80%;
+    }
 }
+
 
 .link {
     text-decoration: none;
@@ -21,8 +26,9 @@
     @extend %border-radius;
     @extend %space-after;
     color: $january;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-style: italic;
+    line-height: 1.4em;
     border-left: .3em solid $aqua;
     padding-left: .7em;
     margin-left: .7em;

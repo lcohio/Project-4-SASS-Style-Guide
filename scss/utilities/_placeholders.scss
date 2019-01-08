@@ -38,6 +38,10 @@
     font-size: .8em;
     border: none;
     @extend %border-radius;
+    @include media(lg) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
     &:hover {
       cursor: pointer;
     }
@@ -47,12 +51,16 @@
     width: 360px;
 }
 
+%nav-btn-lg {
+    width: 20px;
+}
+
 /* Grid Theme Colors */
 
 %grid-style {
-    width: 370px;
+    width: 380px;
     height: 35px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px -10px;
     color: $white;
     border: none;
     @extend %border-radius;

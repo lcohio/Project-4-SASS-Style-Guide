@@ -2,22 +2,43 @@
 // Images
 //===============================================================================================
 
-.img--logo {
-    margin-left: 80px;
+.img {
+    
+    &--logo {
+        margin-left: 80px;
+        @include media(lg) {
+            display: block;
+            padding-top: 20px;
+            margin-left: 0;
+        }
+    }
+
+    &--frame {
+        width: 300px;
+        margin-left: 30px;
+        border: 1px solid #D3E3E6;
+        padding: 10px 10px 10px 10px;
+
+        @include media(lg) {
+            overflow: hidden;
+        }
+    }
+
+    &--avatar {
+        @extend %space-after;
+
+        @include media(lg) {
+           margin-bottom: 40px;
+     
+        }
+    }
+
+
+
+
+
+
+
+
 }
-
-.img--frame {
-    width: 300px;
-    margin-left: 30px;
-    border: 1px solid #D3E3E6;
-    padding: 10px 10px 10px 10px;
-}
-
-.img--avatar {
-    display: block;
-    margin: 20px auto 60px auto;
-    @extend %space-after;
-}
-
-
 

@@ -1,12 +1,28 @@
 //===============================================================================================
-// Navigation
+//  Navigation
 //===============================================================================================
 
-.nav__item {
+.nav {
+
+    @include media(lg) {
+    
+  
+        position: absolute;
+        top: 1.5em;
+        right: 7em;
+    }
+
+    &__item {
     @extend %nav-btn;
     list-style-type: none;
     text-align: center;
     padding: 15px 0 15px 0;
+
+    @include media(lg) {
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+    }
     a {
         text-decoration: none;
         color: $january;
@@ -17,7 +33,4 @@
         @extend %border-radius;
     }
 }
-
-
-
-
+}
