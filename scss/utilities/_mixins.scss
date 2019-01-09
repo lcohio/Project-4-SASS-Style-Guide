@@ -16,3 +16,8 @@
       @error "'#{$break}' is not a valid argument"
     }
   }
+
+  @mixin flexy {
+    display: flex;
+    
+  }

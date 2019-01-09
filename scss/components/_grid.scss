@@ -7,49 +7,63 @@
         margin-bottom: 40px;
         @include media(lg) {
             display: flex;
+            min-width: 100%;
         }
     }
 
     &__col--12 {
         
         @include media(lg) {
+            @include flexy;
             width: 100%;
-            display: flex;
-            flex-direction: row;
-      
-            justify-content: space-around;
         }
         
         &.theme__colors {
         @extend %grid-style;
         background-color: $aqua;
+        @include media(lg) {
+            @include flexy;
+            min-width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            }
         }              
     }
 
     &__col--6 {
 
-        &:last-child {
-            @include media(lg) {
-                margin-left: 20em;
-            }
-    }
-        &.theme__colors {
-        @extend %grid-style;
-        background-color: $ocean;
-        }              
-    }
-
-    &__col--4 {
-        
         @include media(lg) {
-            height: 300px;
-            width: 40%;
-            float: right;
+            margin-left: 3%;
         }
 
         &.theme__colors {
+        @extend %grid-style;
+        background-color: $ocean;
+            @include media(lg) {
+                min-width: 49.5%;
+                margin-left: 10px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }              
+    
+
+    &__col--4 {
+        
+        &.theme__colors {
             @extend %grid-style;
             background-color: $cozumel;
+            @include media(lg) {
+                @include flexy;
+                min-width: 31%;
+                margin-left: 10px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            
+            }
         }
     }
 
@@ -58,18 +72,30 @@
         & img {
             width: 9em;
         }
+
         &.theme__colors {
         @extend %grid-style;
         background-color: $panties;
-        }              
-    }
+        @include media(lg) {
+            @include flexy;
+            width: 25%;
+            margin-left: 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }              
+}
 
     &__col--5 {
         &.theme__colors {
         @extend %grid-style;
         background-color: $lime;
         @include media(lg) {
-            width: 100%;
+            margin-left: 0;
+            width: 40%;
+          
+            
         }
         }              
     }
@@ -78,6 +104,14 @@
         &.theme__colors {
         @extend %grid-style;
         background-color: $watermelon;
+            @include media(lg) {
+                width: 60%;
+                margin-left: 10px;
+                &.centered {
+                    margin: 0 auto;
+                }
+            
+        }
         }              
     }
 
@@ -90,6 +124,10 @@
         &.theme__colors {
         @extend %grid-style;
         background-color: $sunset;
+            @include media(lg) {
+                margin-left: 0;
+                width: 61%;
+            }
         }              
     }
 }

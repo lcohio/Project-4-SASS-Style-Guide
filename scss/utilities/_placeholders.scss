@@ -39,8 +39,8 @@
     border: none;
     @extend %border-radius;
     @include media(lg) {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     &:hover {
       cursor: pointer;

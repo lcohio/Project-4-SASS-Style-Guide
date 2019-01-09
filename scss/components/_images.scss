@@ -25,10 +25,13 @@
     }
 
     &--avatar {
+        @extend %space-before;
+        margin-left: 60px;
         @extend %space-after;
 
         @include media(lg) {
-           margin-bottom: 40px;
+           margin-left: 12em;
+           margin-top: -20px;
      
         }
     }
